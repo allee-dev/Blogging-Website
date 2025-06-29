@@ -1,0 +1,164 @@
+/* Main Content */
+.blog-header {
+	text-align: center;
+	margin-bottom: 3rem;
+	padding: 2rem 0;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	color: #2c3e50;
+}
+
+.blog-meta {
+	color: #7f8c8d;
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.blog-meta span {
+	margin: 0 1rem;
+}
+
+.blog-tags {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.tag {
+	background: #e74c3c;
+	color: white;
+	padding: 0.3rem 0.8rem;
+	border-radius: 20px;
+	font-size: 0.9rem;
+}
+
+.blog-content {
+	background: white;
+	padding: 3rem;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2rem;
+}
+
+.blog-image {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin: 2rem 0;
+}
+
+.blog-content h2 {
+	font-size: 1.8rem;
+	margin: 2rem 0 1rem 0;
+	color: #2c3e50;
+	border-bottom: 2px solid #3498db;
+	padding-bottom: 0.5rem;
+}
+
+.blog-content h3 {
+	font-size: 1.4rem;
+	margin: 1.5rem 0 1rem 0;
+	color: #34495e;
+}
+
+.blog-content p {
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+	line-height: 1.8;
+}
+
+.blog-content ul,
+.blog-content ol {
+	margin: 1.5rem 0;
+	padding-left: 2rem;
+}
+
+.blog-content li {
+	margin-bottom: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.highlight-box {
+	background: #ecf0f1;
+	border-left: 4px solid #3498db;
+	padding: 1.5rem;
+	margin: 2rem 0;
+	border-radius: 5px;
+}
+
+.cta-section {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	padding: 3rem;
+	border-radius: 10px;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+/* Related Posts */
+.related-posts {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.related-posts h3 {
+	margin-bottom: 1.5rem;
+	color: #2c3e50;
+}
+
+.related-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+}
+
+.related-card {
+	border: 1px solid #ecf0f1;
+	border-radius: 8px;
+	padding: 1.5rem;
+	transition: transform 0.3s;
+}
+
+.related-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.related-card h4 {
+	margin-bottom: 0.5rem;
+	color: #2c3e50;
+}
+
+.related-card a {
+	color: #3498db;
+	text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.nav-links {
+		display: none;
+	}
+
+	.blog-title {
+		font-size: 2rem;
+	}
+
+	.blog-content {
+		padding: 2rem 1rem;
+	}
+
+	.cta-section {
+		padding: 2rem 1rem;
+	}
+}
