@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us - My Blogs</title>
+		<link rel="stylesheet" href="../styles/common.css" />
+		<link rel="stylesheet" href="../styles/contact.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<h1>AU Blogs</h1>
+				</div>
+				<ul class="nav-links">
+					<li><a href="index.html" class="active">home</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="contact.html">contact us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="container">
+			<div class="page-header">
+				<h1 class="page-title">Get In Touch</h1>
+				<p class="page-subtitle">
+					We'd love to hear from you! Whether you have questions, feedback, or
+					want to collaborate, don't hesitate to reach out.
+				</p>
+			</div>
+
+			<div class="contact-grid">
+				<div class="contact-form-section">
+					<h2 class="section-title">Send Us a Message</h2>
+					<form class="contact-form" action="#" method="POST">
+						<div class="form-row">
+							<div class="form-group">
+								<label for="firstName">First Name *</label>
+								<input type="text" id="firstName" name="firstName" required />
+							</div>
+							<div class="form-group">
+								<label for="lastName">Last Name *</label>
+								<input type="text" id="lastName" name="lastName" required />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email Address *</label>
+							<input type="email" id="email" name="email" required />
+						</div>
+
+						<div class="form-group">
+							<label for="phone">Phone Number</label>
+							<input type="tel" id="phone" name="phone" />
+						</div>
+
+						<div class="form-group">
+							<label for="subject">Subject *</label>
+							<select id="subject" name="subject" required>
+								<option value="">Select a subject</option>
+								<option value="general">General Inquiry</option>
+								<option value="collaboration">Collaboration</option>
+								<option value="guest-post">Guest Post</option>
+								<option value="technical">Technical Support</option>
+								<option value="business">Business Inquiry</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="message">Message *</label>
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Tell us more about your inquiry..."
+								required
+							></textarea>
+						</div>
+
+						<button type="submit" class="submit-btn">Send Message</button>
+					</form>
+				</div>
+
+				<div class="contact-info-section">
+					<h2 class="section-title">Contact Information</h2>
+					<div class="contact-info">
+						<div class="info-item">
+							<div class="info-icon">📧</div>
+							<div class="info-content">
+								<h3>Email</h3>
+								<p>hello@techblog.com</p>
+								<p>support@techblog.com</p>
+							</div>
+						</div>
+
+						<div class="info-item">
+							<div class="info-icon">📱</div>
+							<div class="info-content">
+								<h3>Phone</h3>
+								<p>+1 (555) 123-4567</p>
+								<p>Mon-Fri, 9:00 AM - 6:00 PM EST</p>
+							</div>
+						</div>
+
+						<div class="info-item">
+							<div class="info-icon">📍</div>
+							<div class="info-content">
+								<h3>Address</h3>
+								<p>123 Tech Street</p>
+								<p>Innovation District</p>
+								<p>San Francisco, CA 94105</p>
+							</div>
+						</div>
+
+						<div class="info-item">
+							<div class="info-icon">⏰</div>
+							<div class="info-content">
+								<h3>Office Hours</h3>
+								<div class="hours-grid">
+									<div class="hours-item">
+										<span>Monday - Friday</span>
+										<span>9:00 AM - 6:00 PM</span>
+									</div>
+									<div class="hours-item">
+										<span>Saturday</span>
+										<span>10:00 AM - 4:00 PM</span>
+									</div>
+									<div class="hours-item">
+										<span>Sunday</span>
+										<span>Closed</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="social-section">
+				<h2 class="section-title">Follow Us</h2>
+				<p>
+					Stay connected and get the latest updates from our blog and community.
+				</p>
+				<div class="social-links">
+					<a href="#" class="social-link" title="Twitter">🐦</a>
+					<a href="#" class="social-link" title="LinkedIn">💼</a>
+					<a href="#" class="social-link" title="Facebook">📘</a>
+					<a href="#" class="social-link" title="Instagram">📷</a>
+					<a href="#" class="social-link" title="YouTube">📺</a>
+					<a href="#" class="social-link" title="GitHub">💻</a>
+				</div>
+			</div>
+
+			<div class="faq-section">
+				<h2 class="section-title">Frequently Asked Questions</h2>
+				<div class="faq-item">
+					<div class="faq-question">
+						How quickly will you respond to my message?
+					</div>
+					<div class="faq-answer">
+						We typically respond to all inquiries within 24-48 hours during
+						business days. For urgent matters, please call us directly.
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">Do you accept guest posts?</div>
+					<div class="faq-answer">
+						Yes! We welcome high-quality guest posts that provide value to our
+						readers. Please select "Guest Post" in the subject field and include
+						your article idea in your message.
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">Can I advertise on your blog?</div>
+					<div class="faq-answer">
+						We offer various advertising opportunities. Please select "Business
+						Inquiry" and we'll send you our media kit with pricing and options.
+					</div>
+				</div>
+				<div class="faq-item">
+					<div class="faq-question">Do you offer consulting services?</div>
+					<div class="faq-answer">
+						Yes, we provide consulting services in productivity, digital
+						marketing, and business optimization. Contact us to discuss your
+						specific needs.
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; 2025 AU Blogs. all rights reserved.</p>
+		</footer>
+	</body>
 </html>
